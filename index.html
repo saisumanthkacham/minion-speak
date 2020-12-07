@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minion speaks</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+         :root {
+            --primary-color: #f7d448;
+            --off-white: #F3F4F6;
+            --off-blue: #517ed8;
+            --off-yellow: #FEF3C7;
+        }
+        
+        body {
+            background-color: var(--off-blue);
+        }
+        
+        * {
+            font-family: 'Caveat', cursive;
+            font-size: 1.2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        
+        .boxes {
+            width: 80%;
+            display: block;
+            height: 5rem;
+            background: var(--primary-color);
+            border: 0;
+            padding: 1rem 3rem 2rem 1rem;
+            margin: 1rem auto;
+            border-radius: 0.3rem;
+        }
+        
+        button {
+            margin: auto;
+            display: block;
+            text-align: center;
+            padding: 0.5rem 2rem;
+            font-size: 1.5rem;
+            border-radius: 0.3rem;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="hero" style="color: var(--off-white);">Minion app</h1>
+
+
+    <!-- input -->
+    <textarea id="input-txt" class="boxes" placeholder="Type your text here..."></textarea>
+    <!-- button -->
+    <button id="btn-translate" style="color: var(--off-blue);">translate</button>
+
+    <!-- output -->
+
+    <textarea id="output" class="boxes" placeholder="see your translated text here"></textarea>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
